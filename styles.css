@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  color: #eeeeee;
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+  color: #eeeeee;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  /* scroll-snap-type:y mandatory; */
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 1.25em;
+  background: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+nav {
+  flex-basis: 50%;
+}
+
+.nav_list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: #eeeeee;
+  font-size: 1.15rem;
+  padding: 0.5em;
+  transition: all 750ms;
+}
+
+.nav_link:hover {
+  opacity: 0.5;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  scroll-snap-align: center;
+}
+
+#section_one {
+  position: relative;
+  background: url("images/pic1.jpg") center center/cover no-repeat;
+}
+
+#section_one::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+#section_two {
+  position: relative;
+  background: url("images/pic2.jpg") center center/cover no-repeat
+    rgba(0, 0, 0, 0.75);
+}
+
+#section_two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+#section_three {
+  position: relative;
+  background: url("images/pic3.jpg") center center/cover no-repeat
+    rgba(0, 0, 0, 0.75);
+}
+
+#section_three::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+#section_four {
+  position: relative;
+  background: url("images/pic4.jpg") center center/cover no-repeat
+    rgba(0, 0, 0, 0.75);
+}
+
+#section_four::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.active {
+  color: #b9ff66;
+}
+
+.active:hover {
+  opacity: 1;
+}
